@@ -24,7 +24,7 @@ filterFile = "filter.rgf"
 ignoreNewlinesInTextObjects = "off"
 
 [environments.demo-dev]
-url = "jdbc:postgresql://192.168.56.140/postgres"
+url = "jdbc:postgresql://192.168.56.140/mytestdb"
 schemas = [ "public" ]
 
 [environments.prod-db]
