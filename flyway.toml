@@ -1,0 +1,32 @@
+databaseType = "PostgreSql"
+id = "75e6d0de-313b-4559-b909-b0652d1a1ad7"
+name = "Syscon V5"
+
+[flyway]
+locations = [ "filesystem:migrations" ]
+mixed = true
+outOfOrder = true
+schemaModelLocation = "schema-model"
+validateMigrationNaming = true
+
+  [flyway.check]
+  majorTolerance = 0
+
+[flywayDesktop]
+developmentEnvironment = "development"
+schemaModel = "schema-model"
+shadowEnvironment = "shadow"
+
+[redgateCompare]
+filterFile = "filter.rgf"
+
+[redgateCompare.postgresql.options.ignores]
+ignoreNewlinesInTextObjects = "off"
+
+[environments.demo-dev]
+url = "jdbc:postgresql://192.168.56.140/postgres"
+schemas = [ "public" ]
+
+[environments.prod-db]
+url = "jdbc:postgresql://192.168.56.150/postgres"
+schemas = [ "public" ]
