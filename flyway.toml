@@ -28,5 +28,9 @@ url = "jdbc:postgresql://192.168.56.140/syscon_dev"
 schemas = [ "oms_owner" ]
 
 [environments.prod-db]
-url = "jdbc:postgresql://192.168.56.150/postgres"
-schemas = [ "public" ]
+url = "jdbc:postgresql://192.168.56.140/syscon_prod"
+schemas = [ "oms_owner" ]
+
+[environments.test-db]
+url = "jdbc:postgresql://192.168.56.140:5432/syscon_test"
+schemas = [ "oms_owner" ]
