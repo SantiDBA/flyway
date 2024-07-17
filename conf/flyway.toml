@@ -1,0 +1,9 @@
+[flyway]
+locations = ["filesystem:migrations"]
+
+
+[environments.default]
+locations = ["filesystem:migrations"]
+url = "jdbc:postgresql://192.168.56.140:5432/mytestdb"
+user = "postgres"
+password = "postgres"

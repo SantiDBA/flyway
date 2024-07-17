@@ -1,0 +1,1 @@
+create table tabla2 (x int);
