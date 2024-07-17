@@ -1,1 +1,1 @@
-create table tabla2 (x int);
+create table santix (x int);
